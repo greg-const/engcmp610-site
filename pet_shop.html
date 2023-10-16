@@ -273,13 +273,30 @@ Ezekiel $5
 [[Go Home!]]
 [[Go to friend&#39;s house.]]</tw-passagedata><tw-passagedata pid="14" name="Stay Home" tags="" position="825,850" size="100,100">You stay home with your $pet! You guys have a great time together. Even though your $pet takes some extra work to take care of, you don&#39;t regret it!
 
-Go to [[Start]] to try your hand with some more pets!</tw-passagedata><tw-passagedata pid="15" name="Go Home!" tags="" position="500,850" size="100,100">You go home with your pet $pet. You find that a simple pet $pet gets slightly boring after a while, but you still like them!
+(if: $pet is &quot;Dog&quot;)[ [[One dog is enough]]
+
+[[Get your Dog a Friend!]] ]
+(else:)[ Go to [[Start]] to try your hand with some more pets!]</tw-passagedata><tw-passagedata pid="15" name="Go Home!" tags="" position="500,850" size="100,100">You go home with your pet $pet. You find that a simple pet $pet gets slightly boring after a while, but you still like them!
 
 Go to [[Start]] to check out some more animals!</tw-passagedata><tw-passagedata pid="16" name="Go to friend&#39;s house." tags="" position="625,850" size="100,100">You go to a friend&#39;s house and have a nice time. Upon your return, you notice your pet $pet is exactly how you left it. You enjoy their company and feel glad that you&#39;re free to do whatever you like while still owning your dear $pet!
 
 Go to [[Start]] to experiment with more pets!</tw-passagedata><tw-passagedata pid="17" name="Go on vacation" tags="" position="1050,750" size="100,100">You have a splendid relaxing vacation, but oh no! Upon your return you find your pet $pet has scratched up and defiled your entire house! What a disaster. 
 
-Go to [[Start]] to experiment with more pets(enchant:?page,(bg:#850000)).</tw-passagedata></tw-storydata>
+Go to [[Start]] to experiment with more pets(enchant:?page,(bg:#850000)).</tw-passagedata><tw-passagedata pid="18" name="One dog is enough" tags="" position="825,975" size="100,100">You decide that owning two dogs is too many, and outside of your capabilities given your schedule. 
+
+[[Take your dog for a walk]]
+[[Stay at home and work]]</tw-passagedata><tw-passagedata pid="19" name="Get your Dog a Friend!" tags="" position="1050,975" size="100,100">You get your dog a friend.. you find that the attention both require is still high, but at least they can play together! (enchant:?page,(bg:#058543))
+
+Go to [[Start]]</tw-passagedata><tw-passagedata pid="20" name="Take your dog for a walk" tags="" position="700,1100" size="100,100">You take your dog out for a walk at the Dog Park. Despite not having any other dog friends at home, your dog is very happy with this arrangement(enchant:?page,(bg:lime))!(enchant:?page,(text-colour:black)) You also benefit from the extra activity.
+
+Go to [[Start]] to test out owning some other pets!
+</tw-passagedata><tw-passagedata pid="21" name="Stay at home and work" tags="" position="950,1100" size="100,100">(enchant:?page,(bg:#a21111))
+
+Without having any other dog friends, and not being walked outside, your dog becomes very unhappy! Owning a higher maintenance pet comes with responsibilities!
+
+Go to [[Start]].
+
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
