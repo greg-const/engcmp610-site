@@ -21,6 +21,9 @@ So let's cut this thing open – using "tmesis" as the Ancient Greeks would call
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--Next is a link to the cascading style sheet or CSS file. Web designers use a cascading stylesheet CSS to add styling to a website. Designers do this by "calling" a <div class> in HTML and defining the class attributes on the style sheet. Doing so saves time and results in less code. On the style.css page you'll find attributes relating to font, text size, image size, among other details.-->
 <link rel="stylesheet" type="text/css" href="style.css">
+<script>function ShowDiv() {
+    document.getElementById("myDiv").style.display = "";
+}</script>
 </head>
 
 <!--The <body> of the document houses the content that a user usually sees on a website. We'll be spending most of our time in this section.-->
@@ -173,9 +176,10 @@ FUN FACT: "Lorem ipsum", "Lorem ipsum" was hacked out of Cicero's "De finibus bo
 
 <div class="textblock">
   <h2>Video Project</h2>
-  <center><iframe width="560" height="315" src="https://www.youtube.com/embed/OZ8RzRj2t0c?si=p34TOE1LfZSOldy2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </center></p>
+  <center><iframe width="560" height="315" src="https://www.youtube.com/watch?v=ibHMeHF_k3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  </center></p>
   <p>In my video project I provide a brief breakdown of Formal Verificiation and Type Theory, as well as showcasing the Manim animation library.</p>
-  <p>Here's some source code for the animations! <script src="https://gist.github.com/greg-const/0bd71a531581502ea3cb4b6a276c876e.js"></script></p>
+  <input type="button" name="answer" onclick="ShowDiv()" />
+  <div id="myDiv" style="display:none;" class="code"><p>Here's some source code for the animations! <script src="https://gist.github.com/greg-const/0bd71a531581502ea3cb4b6a276c876e.js"></script></p></div>
 </div>
 <!--The final step in our process will be to ensure that a smaller version of our "hero image," what Ulmer would refer to as our "wide image," repeats at the bottom of our document to better reinforce this motif.  -->
 
